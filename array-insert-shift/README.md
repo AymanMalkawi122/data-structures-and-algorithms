@@ -20,7 +20,7 @@ O(1) because regardless of the size of our input, the algorithm only allocates a
 
 ## Solution
 
-Just run the following code in any Python3 interpreter
+Just run the following [code](solution.py) in any Python3 interpreter
 
 ```python
 import math
