@@ -33,7 +33,28 @@ def test_head_points_to_start():
 
 def test_list_insert_all():
     test_list = linked_list()
-    test_list.insert([1, 2, 3, 4])
+    test_list.insert_all([1, 2, 3, 4])
     actual = test_list.head.data
     expected = 4
+    assert actual == expected
+
+def test_list_includes_1():
+    test_list = linked_list()
+    test_list.insert_all([1, 2, 3, 4])
+    actual = test_list.includes(4)
+    expected = True
+    assert actual == expected
+
+def test_list_includes_2():
+    test_list = linked_list()
+    test_list.insert_all([1, 2, 3, 4])
+    actual = test_list.includes(69)
+    expected = False
+    assert actual == expected
+
+def test_list_str():
+    test_list = linked_list()
+    test_list.insert_all([1, 2, 3])
+    actual = str(test_list)
+    expected = "{ 3 } -> { 2 } -> { 1 } -> NULL"
     assert actual == expected

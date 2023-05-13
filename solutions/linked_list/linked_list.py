@@ -17,23 +17,27 @@ class linked_list:
             new_node = Node(element)
             new_node.next = self.head
             self.head = new_node
+
+    def includes(self, value):
+        current_node = self.head
+        while current_node != None:
+            if current_node.data == value:
+                return True
+            current_node = current_node.next
+        return False
     
     def __str__(self):
         result = ""
 
         current_node = self.head
         while current_node != None:
-            result += f"{{{current_node.data}}} -> "
+            result += f"{{ {current_node.data} }} -> "
             current_node = current_node.next
         result += "NULL"
+
+        return result
     
-    def includes(self, value):
-        current_node = self.head
-        while current_node != None:
-            if current_node.data == value:
-                return True
-        return False
+   
     
-for element in [1, 2,3]:
-    print(element," ")
+
 
