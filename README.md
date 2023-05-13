@@ -2,7 +2,8 @@
 
 ## Challenges
 
+### [1. array-reverse](./solutions/reverse%20array/)
 
-### [1. array-reverse](./reverse%20array/)
+### [2. array-insert-shift](./solutions/array-insert-shift/)
 
-### [2. array-insert-shift](./array-insert-shift/)
+### [5. Linked-list](./solutions/array-insert-shift/)
