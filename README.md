@@ -6,5 +6,5 @@
 
 ### [2. array-insert-shift](./solutions/array-insert-shift/)
 
-### [5. Linked-list](./solutions/array-insert-shift/)
+### [5. Linked-list](./solutions/linked_list/)
 
