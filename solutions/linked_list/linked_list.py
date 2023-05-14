@@ -3,6 +3,14 @@ class Node:
         self.data = data  
         self.next = None  
   
+"""
+A class that represents a single node in a linked list.
+
+Attributes:
+data (any): The data value of the node.
+next (Node): The reference to the next node in the linked list.
+"""
+
 class linked_list:
     def __init__(self): 
         self.head = None
@@ -36,8 +44,18 @@ class linked_list:
         result += "NULL"
 
         return result
-    
-   
-    
+       
+"""
+A class that represents a linked list data structure.
+
+Attributes:
+head : The reference to the head node of the linked list.
+
+Methods:
+insert(data): Inserts a new node with the given data at the beginning of the linked list.
+insert_all(data): Inserts multiple nodes with the given data at the beginning of the linked list.
+includes(value): Searches the linked list for a node with the given value and returns True if found, otherwise False.
+str(): Returns a string representation of the linked list.
+"""
 
 
