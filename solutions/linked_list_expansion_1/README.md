@@ -4,24 +4,37 @@
 
 ## 1. Whiteboard Process
 
-![image](./assets/Screenshot%202023-05-14%20165113.png)
+### Insert **Before** and **After**
+
+![image](./assets/insert.png)
+
+### Append
+
+![image](./assets/append.png)
 
 ## 2. Approach & Efficiency
 
 ### Approach
 
-* The code defines two classes, ```Node``` and ```linked_list```, and implements a linked list data structure using the Node class.
+* The code defines a ```Node``` class that represents a single node in a linked list, with a data attribute and a next pointer to the next node.
+It then defines a ```linked_list``` class that represents the linked list, with methods for inserting new nodes, checking if a value exists in the list, appending a new node to the end of the list, inserting a new node before a specified value, and inserting a new node after a specified value.
 
-* The linked list class has methods to insert elements, insert multiple elements, check if a value is included in the list, and create a string representation of the list.
+* The ```linked list``` is implemented using a head node that points to the first node in the list.
 
 ### Efficiency
 
-* The efficiency of the code depends on the operations being performed. The ```insert``` and ```insert_all``` methods have a time complexity of O(1) per insertion opiration as they simply add elements to the beginning of the list.
+* The ```insert``` method has a time complexity of O(n) when inserting a list of length n, since it has to traverse the list to insert each element.
 
-* The ```includes``` method has a time complexity of O(n) as it needs to iterate over all elements in the list. The ```string representation``` of the list is created in O(n) time complexity.
+* The ```includes``` method has a time complexity of O(n) in the worst case, since it has to traverse the entire list to check if a value exists.
+
+* The ```append``` method has a time complexity of O(n), since it has to traverse the list to find the end.
+
+* The ```insert_before``` and ```insert_after``` methods have a time complexity of O(n), since they have to traverse the list to find the specified value.
 
 ## 3. Solution
 
-* Solution: The code provides a basic implementation of a linked list data structure in Python, allowing elements to be added to the list and searched for.
+* The code defines a ```Node``` class and a ```linked_list``` class to implement a linked list.
 
-* The implementation could be improved by adding more functionality, such as removing elements or inserting elements at specific positions in the list.
+* The ```linked_list``` class has methods to insert new nodes, check if a value exists in the list, append a new node to the end of the list, insert a new node before a specified value, and insert a new node after a specified value.
+
+* The linked list is implemented using a head node that points to the first node in the list.
