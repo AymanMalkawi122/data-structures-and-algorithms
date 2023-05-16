@@ -8,4 +8,6 @@
 
 ### [5. Linked-list](./solutions/linked_list/)
 
-### [6. Linked-list](./solutions/linked_list_expansion_1/)
+### [6. Linked-list-insertions](./solutions/linked_list_expansion_1/)
+
+### [7. Linked-list-kth](./solutions/linked_list_expansion_2/)
