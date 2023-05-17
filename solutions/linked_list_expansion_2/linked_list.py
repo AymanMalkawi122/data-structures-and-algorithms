@@ -103,7 +103,7 @@ class linked_list:
     def kthFromEnd(self, k):
         value ,index = linked_list.__get_kth_from_end(k, self.head)
         if value == None:
-            raise Exception(f"K is bigger than Linked list size by {k - index}")
+            raise Exception(f"K index is bigger than Linked list size by {k - index}")
         return value
 
     def __str__(self):
@@ -118,18 +118,17 @@ class linked_list:
         return result
        
 """
-    A class that represents a linked list data structure.
-
+    A class representing a linked list data structure.
     Attributes:
     head : The reference to the head node of the linked list.
 
     Methods:
-    insert(data): Inserts multiple nodes with the given data at the beginning of the linked list.
-    includes(value): Searches the linked list for a node with the given value and returns True if found, otherwise False.
-    append: Adds an element to the end of the linked list.
-    insert_before: Inserts an element before a given value in the linked list.
-    insert_after: Inserts an element after a given value in the linked list.
-    __str__: Returns a string representation of the linked list.
+    - insert(data): Inserts a new node at the beginning of the linked list.
+    - includes(value): Checks if a given value exists in the linked list.
+    - append(data): Appends a new node at the end of the linked list.
+    - insert_before(value, data): Inserts a new node before a specified value in the linked list.
+    - insert_after(value, data): Inserts a new node after a specified value in the linked list.
+    - kthFromEnd(k): Returns the value of the node k positions from the end of the linked list.
+    - __str__(): Returns a string representation of the linked list.
 """
-
 

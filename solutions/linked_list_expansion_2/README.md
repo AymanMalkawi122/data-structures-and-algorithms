@@ -4,37 +4,31 @@
 
 ## 1. Whiteboard Process
 
-### Insert **Before** and **After**
+### Kth from end
 
-![image](./assets/insert.png)
+![image](./assets/getKth.png)
 
-### Append
-
-![image](./assets/append.png)
 
 ## 2. Approach & Efficiency
 
 ### Approach
 
-* The code defines a ```Node``` class that represents a single node in a linked list, with a data attribute and a next pointer to the next node.
-It then defines a ```linked_list``` class that represents the linked list, with methods for inserting new nodes, checking if a value exists in the list, appending a new node to the end of the list, inserting a new node before a specified value, and inserting a new node after a specified value.
+* The approach used to find the ```k-th``` value from the end of a linked list is a recursive approach.
 
-* The ```linked list``` is implemented using a head node that points to the first node in the list.
+* It involves traversing the linked list recursively until reaching the end, and then tracking the index of each node encountered. By comparing the index to the desired ```k``` value, the ```k-th``` value from the end can be determined.
 
 ### Efficiency
 
-* The ```insert``` method has a time complexity of O(n) when inserting a list of length n, since it has to traverse the list to insert each element.
+* The **Time complexity** of finding the k-th value from the end of a linked list using this recursive approach is O(n), where n is the number of nodes in the linked list.
 
-* The ```includes``` method has a time complexity of O(n) in the worst case, since it has to traverse the entire list to check if a value exists.
+* This is because each node is visited once during the recursive traversal.
 
-* The ```append``` method has a time complexity of O(n), since it has to traverse the list to find the end.
+* The **Space complexity** of this approach is O(n) as well, due to the recursive function calls which create a call stack.
 
-* The ```insert_before``` and ```insert_after``` methods have a time complexity of O(n), since they have to traverse the list to find the specified value.
+* In the worst case scenario, where k is equal to the length of the linked list, the call stack will have a depth of n.
 
 ## 3. Solution
 
-* The code defines a ```Node``` class and a ```linked_list``` class to implement a linked list.
+* To find the ```k-th``` value from the end of a ```linked list```, you can call the ```kthFromEnd()``` method on an instance of the linked list class, passing the desired value of ```k```.
 
-* The ```linked_list``` class has methods to insert new nodes, check if a value exists in the list, append a new node to the end of the list, insert a new node before a specified value, and insert a new node after a specified value.
-
-* The linked list is implemented using a head node that points to the first node in the list.
+*The method will return the ```k-th``` value from the end if it exists, or raise an ```exception``` if k is greater than the length of the linked list.

@@ -11,14 +11,22 @@ def test_list():
 
 def test_initial():
     pass
-def 
+
 def test_k_greater_than_length(test_list):
     with pytest.raises(Exception):
-        test_list.insert_after(5, 10)
-    
-def test_insert_after_3(test_list):
-    
-    test_list.insert_after(1, [10, 11])
-    actual = str(test_list)
-    expected = "{ 4 } -> { 3 } -> { 2 } -> { 1 } -> { 11 } -> { 10 } -> NULL"
-    assert actual == expected
+        test_list.kthFromEnd(5)
+     
+def test_k_equal_to_length(test_list):
+    acutal = test_list.kthFromEnd(3)
+    expected = 4
+    assert acutal == expected
+
+def test_k_equal_to_zero(test_list):
+    acutal = test_list.kthFromEnd(0)
+    expected = 1
+    assert acutal == expected
+
+def test_k_in_middle(test_list):
+    acutal = test_list.kthFromEnd(2)
+    expected = 3
+    assert acutal == expected
