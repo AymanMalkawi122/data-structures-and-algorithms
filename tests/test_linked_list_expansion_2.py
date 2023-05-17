@@ -14,6 +14,10 @@ def test_initial():
 
 def test_k_greater_than_length(test_list):
     with pytest.raises(Exception):
+        test_list.kthFromEnd(4)
+
+def test_k_negative(test_list):
+    with pytest.raises(Exception):
         test_list.kthFromEnd(5)
      
 def test_k_equal_to_length(test_list):
@@ -30,3 +34,4 @@ def test_k_in_middle(test_list):
     acutal = test_list.kthFromEnd(2)
     expected = 3
     assert acutal == expected
+

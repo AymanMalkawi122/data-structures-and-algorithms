@@ -102,7 +102,7 @@ class linked_list:
     
     def kthFromEnd(self, k):
         value ,index = linked_list.__get_kth_from_end(k, self.head)
-        if value == None:
+        if value == None or k<0:
             raise Exception(f"K index is bigger than Linked list size by {k - index}")
         return value
 
