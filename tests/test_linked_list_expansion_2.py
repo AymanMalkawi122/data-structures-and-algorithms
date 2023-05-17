@@ -18,7 +18,13 @@ def test_k_greater_than_length(test_list):
 
 def test_k_negative(test_list):
     with pytest.raises(Exception):
-        test_list.kthFromEnd(5)
+        test_list.kthFromEnd(-5)
+
+def test_k_greater_than_size_1():
+    llist = linked_list()
+    llist.insert(1)
+    with pytest.raises(Exception):
+        llist.kthFromEnd(1)
      
 def test_k_equal_to_length(test_list):
     acutal = test_list.kthFromEnd(3)
@@ -35,3 +41,9 @@ def test_k_in_middle(test_list):
     expected = 3
     assert acutal == expected
 
+def test_k_with_size_1(test_list):
+    llist = linked_list()
+    llist.insert(1)
+    acutal = test_list.kthFromEnd(0)
+    expected = 1
+    assert acutal == expected
