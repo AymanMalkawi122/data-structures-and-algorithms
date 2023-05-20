@@ -1,4 +1,3 @@
-
 import pytest
 from solutions.linked_list_expansion_2.linked_list import (linked_list)
 
