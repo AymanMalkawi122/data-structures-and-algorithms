@@ -8,7 +8,6 @@
 
 ![image](./assets/getKth.png)
 
-
 ## 2. Approach & Efficiency
 
 ### Approach

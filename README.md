@@ -11,3 +11,5 @@
 ### [6. Linked-list-insertions](./solutions/linked_list_expansion_1/)
 
 ### [7. Linked-list-kth](./solutions/linked_list_expansion_2/)
+
+### [8. stack-and-queue](./solutions/stack-and-queue/)
