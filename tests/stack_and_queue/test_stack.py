@@ -10,13 +10,15 @@ def stack():
 def test_initial():
     pass
 
-def test_stack_is_empty():
+def instantiate_empty_stack():
     stack = Stack()
-
+    
     acutal = stack.is_empty()
     expected = True
     assert acutal == expected
 
+def test_stack_isnt_empty():
+    stack = Stack()
     stack.push(1)
 
     acutal = stack.is_empty()

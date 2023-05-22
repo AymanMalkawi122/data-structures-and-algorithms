@@ -10,16 +10,18 @@ def queue():
 def test_initial():
     pass
 
-def test_queue_is_empty():
+def instantiate_empty_queue():
     queue = Queue()
 
     acutal = queue.is_empty()
     expected = True
     assert acutal == expected
 
-    queue.enqueue(1)
+def test_queue_isnt_empty():
+    stack = Queue()
+    stack.enqueue(1)
 
-    acutal = queue.is_empty()
+    acutal = stack.is_empty()
     expected = False
     assert acutal == expected
 
