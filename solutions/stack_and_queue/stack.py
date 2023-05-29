@@ -34,7 +34,7 @@ class Stack:
 
     def peek(self):
         if self.is_empty():
-            raise Exception("S is empty!")
+            raise Exception("Stack is empty!")
         return self.top.data
     
     def pop(self):
