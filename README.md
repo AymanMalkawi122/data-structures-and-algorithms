@@ -15,3 +15,5 @@
 ### [8. stack-and-queue](./solutions/stack_and_queue/)
 
 ### [9. Linked-list-kth](./solutions/linked_list_expansion_3/)
+
+### [10. QueuePseudo](./solutions/stack_queue_pseudo/)
