@@ -17,3 +17,5 @@
 ### [9. Linked-list-kth](./solutions/linked_list_expansion_3/)
 
 ### [10. QueuePseudo](./solutions/stack_queue_pseudo/)
+
+### [11. QueuePseudo](./solutions/stack_queue_animal_shelter/)
