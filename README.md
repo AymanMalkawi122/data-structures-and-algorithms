@@ -18,4 +18,6 @@
 
 ### [10. QueuePseudo](./solutions/stack_queue_pseudo/)
 
-### [11. QueuePseudo](./solutions/stack_queue_animal_shelter/)
+### [11. animal-shelter](./solutions/stack_queue_animal_shelter/)
+
+### [12. stack-queue-brackets](./solutions/stack_queue_brackets/)
