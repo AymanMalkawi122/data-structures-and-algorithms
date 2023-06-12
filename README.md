@@ -21,3 +21,5 @@
 ### [11. animal-shelter](./solutions/stack_queue_animal_shelter/)
 
 ### [12. stack-queue-brackets](./solutions/stack_queue_brackets/)
+
+### [16. stack-queue-brackets](./solutions/trees/max.md)

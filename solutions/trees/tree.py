@@ -1,3 +1,5 @@
+import sys
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -27,23 +29,32 @@ class BinaryTree:
             self.__post_order_helper(node.right, result)
             result.append(node.value)
 
+    def __max(self, root):
+        if root == None:
+            return -sys.maxsize - 1
+        if root.left == None and root.right == None:
+            return root.value
+        return max(self.__max(root.left), self.__max(root.right))
+
     def pre_order(self):
         result = []
         self.__pre_order_helper(self.root, result)
         return result
-
 
     def in_order(self):
         result = []
         self.__in_order_helper(self.root, result)
         return result
 
-
     def post_order(self):
         result = []
         self.__post_order_helper(self.root, result)
         return result
 
+    def max_node(self):
+        if self.root != None:
+            return max(self.root.value, self.__max(self.root))
+        return None
 
 class BinarySearchTree(BinaryTree):
     def _add_helper(self, node, value):
