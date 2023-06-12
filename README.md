@@ -22,4 +22,4 @@
 
 ### [12. stack-queue-brackets](./solutions/stack_queue_brackets/)
 
-### [16. stack-queue-brackets](./solutions/trees/max.md)
+### [16. tree-max](./solutions/trees/max.md)
