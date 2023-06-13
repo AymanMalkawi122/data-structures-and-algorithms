@@ -4,12 +4,14 @@ from solutions.trees.tree import BinaryTree, Node
 def test_initial():
     pass
 
-def test_max_empty():
+def test_max_root_is_None():
     tree = BinaryTree()
+    root_node = None
+    tree.root = root_node
     assert tree.max_node() == None
 
 
-def test_max_single_root():
+def test_max_root_no_children():
     tree = BinaryTree()
     root_node = Node(1)
     tree.root = root_node
