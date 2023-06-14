@@ -31,8 +31,8 @@ def test_max_complex_tree():
     root_node.left = Node(5)
     root_node.right = Node(1)
     root_node.right.right = Node(20)
-    root_node.right.right = Node(30)
+    root_node.right.left = Node(30)
     root_node.left.right = Node(15)
-    root_node.left.right = Node(16)
+    root_node.left.left = Node(16)
     tree.root = root_node
     assert tree.max_node() == 30
