@@ -34,7 +34,7 @@ class BinaryTree:
             return -sys.maxsize - 1
         if root.left == None and root.right == None:
             return root.value
-        return max(self.__max(root.left), self.__max(root.right))
+        return max(self.__max(root.left), self.__max(root.right), root.value)
 
     def pre_order(self):
         result = []
