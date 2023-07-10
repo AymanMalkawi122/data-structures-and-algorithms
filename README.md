@@ -25,3 +25,4 @@
 ### [16. stack-queue-brackets](./solutions/trees/max.md)
 
 ### [26. insrtion sort](./solutions/sorting/insertion/)
+
