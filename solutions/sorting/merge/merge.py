@@ -21,15 +21,12 @@ def merge(arr1, arr2):
     return final_arr
 
 def merge_sort(arr):
-    if len(arr) == 1:
+    if len(arr) <= 1:
         return arr
     arr_split = split(arr)
     first_half = arr_split[0]
     second_half = arr_split[1]
-    # print(arr_split)
     sorted_first_half = merge_sort(first_half)
     sorted_second_half = merge_sort(second_half)
 
     return merge(sorted_first_half, sorted_second_half)
-
-print(merge_sort([1,2,3,4,5]))

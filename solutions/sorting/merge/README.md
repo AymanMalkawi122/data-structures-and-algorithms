@@ -1,4 +1,4 @@
-# Insertion Sort
+# merge Sort
 
 The algorithm works by dividing the array into a sorted and an unsorted region. It iterates through the unsorted region and repeatedly selects an element (```current_value```), comparing it with elements in the sorted region, and shifting them to the right until finding the correct position for the key. Finally, it places the key at its sorted position.
 
