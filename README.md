@@ -26,4 +26,3 @@
 
 ### [26. insrtion sort](./solutions/sorting/insertion/)
 
-### [27. merge sort](./solutions/sorting/merge/)
