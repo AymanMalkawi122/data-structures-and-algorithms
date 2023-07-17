@@ -27,3 +27,5 @@
 ### [26. insrtion sort](./solutions/sorting/insertion/)
 
 ### [27. merge sort](./solutions/sorting/merge/)
+
+### [28. object sort](./solutions/sorting/objects/)
