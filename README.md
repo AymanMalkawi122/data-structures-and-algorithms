@@ -29,3 +29,5 @@
 ### [27. merge sort](./solutions/sorting/merge/)
 
 ### [28. object sort](./solutions/sorting/objects/)
+
+### [Hash Tables](./solutions/hash_tables/)
