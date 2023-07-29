@@ -1,27 +1,23 @@
-# 
+# hashmap repeated word
 
-## Task: implement a linked list data structure
+## Task: Write a function called repeated word that finds the first word to occur more than once in a stringimplement a linked list data structure
 
 ## 1. Whiteboard Process
 
-![image](./assets/Screenshot%202023-05-14%20165113.png)
+![image](./assets/Screenshot%202023-07-29%20210107.png)
 
 ## 2. Approach & Efficiency
 
 ### Approach
 
-* The code defines two classes, ```Node``` and ```linked_list```, and implements a linked list data structure using the Node class.
-
-* The linked list class has methods to insert elements, insert multiple elements, check if a value is included in the list, and create a string representation of the list.
+The repeated_word function aims to find the first repeated word in the given input_string. It does so by using a Hashtable (implemented in the Hashtable class) to store each word encountered while traversing through the input string. As soon as a repeated word is found, the function returns that word; otherwise, it returns None.
 
 ### Efficiency
 
-* The efficiency of the code depends on the operations being performed. The ```insert``` and ```insert_all``` methods have a time complexity of O(1) per insertion opiration as they simply add elements to the beginning of the list.
+***Time Complexity***: The time complexity of the repeated_word function mainly depends on the hashtable operations. The insertion and lookup operations in the hashtable generally have an average case time complexity of O(1). Therefore, the overall time complexity of the function is O(n), where n is the number of words in the input string.
 
-* The ```includes``` method has a time complexity of O(n) as it needs to iterate over all elements in the list. The ```string representation``` of the list is created in O(n) time complexity.
+***Space Complexity***: The space complexity is O(m), where m is the number of unique words in the input string. In the worst case, where all words are unique, the space complexity will be O(n).
 
 ## 3. Solution
 
-* Solution: The code provides a basic implementation of a linked list data structure in Python, allowing elements to be added to the list and searched for.
-
-* The implementation could be improved by adding more functionality, such as removing elements or inserting elements at specific positions in the list.
+The solution provided uses a custom Hashtable class to efficiently store and look up words encountered in the input string. The input string is first converted to lowercase to ensure that the function is case-insensitive. Then, the input string is split into individual words. As the words are processed, they are inserted into the hashtable. If a word is found to be already present in the hashtable, it means it is a repeated word, and the function returns that word. If no repeated word is found during the traversal, the function returns None. The hashtable effectively keeps track of the unique words encountered so far, allowing the function to quickly identify repeated words and return the result.
