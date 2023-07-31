@@ -31,3 +31,5 @@
 ### [28. object sort](./solutions/sorting/objects/)
 
 ### [Hash Tables](./solutions/hash_tables/)
+
+### [32. tree intersection](./solutions/tree_intersection/)
