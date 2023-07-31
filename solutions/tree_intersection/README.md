@@ -1,4 +1,4 @@
-# stack queue pseudo
+# tree intersection 
 
 ## Task: Write a function called tree_intersection that takes two binary trees as parameters using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees
 
