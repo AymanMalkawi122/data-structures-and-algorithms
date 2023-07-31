@@ -31,3 +31,5 @@
 ### [28. object sort](./solutions/sorting/objects/)
 
 ### [Hash Tables](./solutions/hash_tables/)
+
+### [33. Left join](./solutions/hash_tables/)
