@@ -34,4 +34,4 @@
 
 ### [32. tree intersection](./solutions/tree_intersection/)
 
-### [33. Left join](./solutions/hash_tables/)
+### [33. Left join](./solutions/left_join/)
