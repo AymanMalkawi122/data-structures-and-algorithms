@@ -1,31 +1,30 @@
 # Hash Table
 
-## Task: Implement a Hashtable Class
+## Task: Implement a Graph Class
 
 ## Approach & Efficiency
 
 ### Approach
 
-1. The Hashtable class is implemented with a fixed-size array of buckets. Each bucket is a linked list to handle collisions.
-2. A simple hash function is used to convert the key into an index to determine the bucket for the key-value pair.
-3. The set method first calculates the index using the hash function and then traverses the linked list in the bucket to find if the key already exists. If found, it updates the value; otherwise, it appends a new node to the linked list.
-4. The get method uses the hash function to find the bucket and then traverses the linked list to locate the key and return its value.
-5. The has method follows a similar approach as get, but it returns a boolean value indicating if the key exists in the hashtable.
-6. The keys method iterates through all buckets, collects unique keys in a set, and returns the keys as a list.
-
-7. Hash Function:
-
-    The simple hash function uses the sum of the ASCII values of characters in the key and then calculates the modulo with the size of the hashtable to get an index within the range of buckets.
+* The Graph class is implemented using an adjacency list representation, where each vertex is associated with a dictionary of its neighbors and their
+corresponding edge weights.
+* The add_vertex method adds a vertex to the graph by creating an entry in the vertices_map dictionary with an empty dictionary as its value.
+* The add_edge method adds an edge between two vertices by updating the vertices_map dictionaries of both vertices with the appropriate weight.
+* The get_vertices method returns a list of all vertices in the graph by extracting the keys from the vertices_map dictionary.
+* The get_neighbors method returns a list of neighbors for a given vertex by extracting the keys from the dictionary associated with that vertex in the vertices_map.
+* The size method returns the number of vertices in the graph by calculating the length of the list of vertices obtained from the get_vertices method.
 
 ### Efficiency
 
-* **Time complexity**: set, get, has, and keys methods: In the worst case, when there are many collisions and all keys hash to the same index, the time complexity of these methods can be O(n), where n is the number of key-value pairs in the hashtable. On average, when there are fewer collisions, the time complexity approaches O(1).
-Hash Function: The time complexity of the hash function is O(k), where k is the length of the key. Since the keys' length is usually small and constant, the hash function can be considered as O(1).
-Space Complexity:
+* **Time complexity**:
+* Adding a vertex (add_vertex): O(1)
+* Adding an edge (add_edge): O(1)
+* Getting vertices (get_vertices): O(V), where V is the number of vertices
+* Getting neighbors (get_neighbors): O(E), where E is the number of edges connected to the given vertex
+* Getting the size (size): O(V), where V is the number of vertices
 
-* **Space complexity**: The space complexity of the Hashtable is O(m + n), where m is the size of the hashtable (number of buckets), and n is the number of key-value pairs in the hashtable. In our implementation, the size is fixed at 100 (m = 100), and the space used for each key-value pair is constant (O(1)).
-The space complexity of the hash function is also O(1) since it uses a fixed number of operations and does not depend on the input size.
+* **Space complexity**: The space complexity of the Graph class is O(V + E), where V is the number of vertices and E is the number of edges.
 
 ## 3. Solution
 
-this implementation of the Hashtable class is efficient for small to moderate-sized datasets and provides constant-time lookups in the average case when there are fewer collisions. However, for larger datasets and potential high collision rates, more advanced hash table implementations, like chaining with balanced trees or open addressing, may offer better performance.
+The Graph class provides an efficient representation of a graph using an adjacency list. It allows for the addition of vertices and edges and provides methods to retrieve information about the graph's vertices and neighbors. The implementation uses dictionaries to store neighbors and their edge weights, enabling quick access to neighbors and efficient space usage.
