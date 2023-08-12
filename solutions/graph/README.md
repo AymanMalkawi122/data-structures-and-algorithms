@@ -1,4 +1,4 @@
-# Hash Table
+# Graph
 
 ## Task: Implement a Graph Class
 
