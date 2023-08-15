@@ -37,3 +37,5 @@
 ### [33. Left join](./solutions/left_join/)
 
 ### [35. Graph](./solutions/graph/)
+
+### [37. business_trip](./solutions/business_trip/)
